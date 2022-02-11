@@ -1,6 +1,7 @@
 <resources>
     <string name="app_name">Score Counter</string>
-    <string name="get_ip">show IP</string>
+    <string name="start_server">Become a Server</string>
     <string name="connect_to">CONNECT</string>
     <string name="ip_input_field">enter ip to connect</string>
+    <string name="ip_field">IP</string>
 </resources>

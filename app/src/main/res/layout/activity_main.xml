@@ -7,11 +7,11 @@
     tools:context=".MainActivity">
 
     <Button
-        android:id="@+id/show_ip"
-        android:layout_width="133dp"
+        android:id="@+id/startServer"
+        android:layout_width="130dp"
         android:layout_height="61dp"
         android:layout_marginEnd="50dp"
-        android:text="@string/get_ip"
+        android:text="@string/start_server"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -19,22 +19,35 @@
 
     <Button
         android:id="@+id/connect"
-        android:layout_width="84dp"
+        android:layout_width="80dp"
         android:layout_height="61dp"
         android:text="@string/connect_to"
-        app:layout_constraintStart_toEndOf="@+id/show_ip"
-        app:layout_constraintTop_toTopOf="@+id/show_ip" />
+        app:layout_constraintStart_toEndOf="@+id/startServer"
+        app:layout_constraintTop_toTopOf="@+id/startServer" />
 
     <EditText
         android:id="@+id/input_ip_address"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="210dp"
+        android:layout_height="43dp"
         android:ems="10"
+        android:hint="@string/ip_input_field"
         android:inputType="textPersonName"
         android:minHeight="48dp"
-        android:hint="@string/ip_input_field"
         android:visibility="invisible"
-        app:layout_constraintStart_toStartOf="@+id/show_ip"
-        app:layout_constraintTop_toBottomOf="@+id/show_ip" />
+        app:layout_constraintStart_toStartOf="@+id/startServer"
+        app:layout_constraintTop_toBottomOf="@+id/startServer" />
+
+    <TextView
+        android:id="@+id/server_ip"
+        android:layout_width="210dp"
+        android:layout_height="35dp"
+        android:layout_marginBottom="1dp"
+        android:text="@string/ip_field"
+        android:textAlignment="center"
+        android:textIsSelectable="true"
+        android:textSize="30sp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/startServer"
+        app:layout_constraintStart_toStartOf="@+id/startServer" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
