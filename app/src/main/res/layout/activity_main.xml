@@ -17,18 +17,24 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <RadioGroup
-        android:id="@+id/wifi_ip_addresses"
+    <Button
+        android:id="@+id/connect"
+        android:layout_width="84dp"
+        android:layout_height="61dp"
+        android:text="@string/connect_to"
+        app:layout_constraintStart_toEndOf="@+id/show_ip"
+        app:layout_constraintTop_toTopOf="@+id/show_ip" />
+
+    <EditText
+        android:id="@+id/input_ip_address"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:layout_constraintStart_toEndOf="@+id/show_ip"
-        app:layout_constraintTop_toTopOf="@+id/show_ip">
-
-        <Button
-            android:id="@+id/connect_ip"
-            android:layout_width="84dp"
-            android:layout_height="61dp"
-            android:text="@string/connect_to" />
-    </RadioGroup>
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        android:hint="@string/ip_input_field"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="@+id/show_ip"
+        app:layout_constraintTop_toBottomOf="@+id/show_ip" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
