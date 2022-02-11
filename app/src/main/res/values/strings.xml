@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Score Counter</string>
+    <string name="get_ip">show IP</string>
+    <string name="connect_to">CONNECT</string>
+</resources>
